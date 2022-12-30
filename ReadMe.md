@@ -1,14 +1,13 @@
 # Poller
-A basic polling application that allows users to take part in polls; it also lets administrators set the questions using a GUI.
+A basic polling application that allows users to take part in polls, and it lets administrators set the questions using a GUI.
 
 
 ## Motivation
-I used this project to learn the basics of the Django framework. (This project was created using [this guide](https://docs.djangoproject.com/en/4.1/intro/tutorial01/) from Django.)
-
+I used this to learn the basics of [Django](https://docs.djangoproject.com/en/4.1/intro/tutorial01/).
 
 ## Pre-requisite Tools
 The following tools are needed to run this application:
-- [Python](www.python.org/downloads/)
+- [Python](https://www.python.org/downloads/)
 - [Django](https://docs.djangoproject.com/en/4.1/intro/install/)
 
 
