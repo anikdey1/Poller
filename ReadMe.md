@@ -9,6 +9,7 @@ I used this to learn the basics of [Django](https://docs.djangoproject.com/en/4.
 The following tools are needed to run this application:
 - [Python](https://www.python.org/downloads/)
 - [Django](https://docs.djangoproject.com/en/4.1/intro/install/)
+- [Python Decouple](https://pypi.org/project/python-decouple/)
 
 
 ## Instructions
