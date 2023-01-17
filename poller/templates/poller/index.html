@@ -12,9 +12,9 @@
 		<h1>Poller</h1>
 		<section>
 			<div>
-				{% if latest_questions_list %}
+				{% if latest_question_list %}
 					<ul>
-						{% for question in latest_questions_list %}
+						{% for question in latest_question_list %}
 							<article>
 								<li>
 									<a href="{% url 'poller:detail' question.id %}">
