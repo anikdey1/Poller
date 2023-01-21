@@ -1,5 +1,5 @@
 # Poller
-A basic polling application that allows users to take part in polls.
+A basic application that allows users to take part in polls.
 
 
 ## Motivation
