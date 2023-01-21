@@ -18,5 +18,5 @@ To run the application locally on Windows, follow these steps:
 1. Clone the repository onto your machine.
 2. Open Command Prompt and navigate to the project folder.
 3. Create a `.env` file using this command: `type nul > .env`
-4. Open the `.env` file with an editor, and place the secret key in it in the following format: `SECRET_KEY = '<SecretKey>'`
+4. Open the `.env` file with an editor, and place the secret key in it, using the following format: `SECRET_KEY = '<SecretKey>'`
 5. Enter the following command to run the local server: `py manage.py runserver`
