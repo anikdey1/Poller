@@ -20,4 +20,5 @@ To run the application locally on Windows, follow these steps:
 3. Create a `.env` file using this command: `type nul > .env`
 4. Open the `.env` file with an editor, and place the secret key in it, using the following format: `SECRET_KEY = '<SecretKey>'`
 5. Enter the following command to run the local server: `py manage.py runserver`
-6. After the localhost URL provided by the previous command, add the following slug to open the app: `/poller`
+6. Add the following slug after the localhost URL provided by the previous command to open the app: `/poller`
+7. Use the `/admin` slug to access the administration site.
