@@ -13,27 +13,13 @@
 		<a href="{% url 'poller:index' %}">
 			<h1>Poller</h1>
 		</a>
-		<!--
-		<section>
-			<div>
-				<article>
-					<h2>{{ question.question_text }}</h2>
-					<ul>
-						{% for choice in question.choice_set.all %}
-							<li>{{ choice.choice_text }}</li>
-						{% endfor %}
-					</ul>
-				</article>
-			</div>
-		</section>
-		-->
 		<section>
 			<div>
 				<article>
 					<form action="{% url 'poller:vote' question.id %}" method="POST">
 						{% csrf_token %}
 						<fieldset>
-							<legend><h2>{{ question.question_text }}</h2></legend>
+							<legend><h4>{{ question.question_text }}</h4></legend>
 							{% if error_message %}
 								<p><strong>{{ error_message }}</strong></p>
 							{% endif %}

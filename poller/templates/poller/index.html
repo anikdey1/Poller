@@ -21,9 +21,9 @@
 						{% for question in latest_question_list %}
 							<article>
 								<div>
-									<li><a href="{% url 'poller:detail' question.id %}">
+									<li><h4><a href="{% url 'poller:detail' question.id %}">
 										{{ question.question_text }}
-									</a></li>
+									</a></h4></li>
 								</div>
 							</article>
 						{% endfor %}
