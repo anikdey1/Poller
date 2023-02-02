@@ -11,10 +11,10 @@
 <body>
 	<main>
 		<a href="{% url 'poller:index' %}">
-			<h1>Poller</h1>
+			<h1 class="main-logo">Poller</h1>
 		</a>
 		<section>
-			<div>
+			<div class="result-list">
 				<article>
 					<h4>{{ question.question_text }}</h4>
 					<ul>
@@ -26,6 +26,8 @@
 						{% endfor %}
 					</ul>
 				</article>
+			</div>
+			<div class="vote-question">
 				<article>
 					<a href="{% url 'poller:detail' question.id %}">Vote again?</a>
 				</article>

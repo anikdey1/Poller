@@ -1,9 +1,91 @@
+/* Common */
+body {
+	background: url("images/background.jpg") no-repeat;
+	font-family: sans-serif;
+}
+
+.main-logo {
+	text-align: center;
+	margin-top: 70px;
+	font-size: 3rem;
+	color: darkgreen;
+}
+
 a {
 	color: green;
 	text-decoration: none;
 }
 
-body {
-	background: white url("images/background.jpg") no-repeat;
-	font-family: sans-serif;
+h4 {
+	font-style: italic;
+	color: #3F3F3F;
+}
+
+p {
+	color: #3F3F3F;
+}
+
+input {
+	accent-color: green;
+}
+
+li {
+	color: #3F3F3F;
+}
+
+
+/* Homepage */
+.question-list {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 500px;
+	font-size: 1.2rem;
+}
+
+
+/* Vote */
+.option-list {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 500px;
+	font-size: 1.2rem;
+}
+
+.vote-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+	background-color: green;
+	color: white;
+	font-size: 1rem;
+}
+
+.unselected-vote {
+	color: purple;
+	text-align: center;
+}
+
+
+/* Results */
+.result-list {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 500px;
+	font-size: 1.2rem;
+}
+
+.vote-question {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1rem;
 }

@@ -11,29 +11,31 @@
 <body>
 	<main>
 		<a href="{% url 'poller:index' %}">
-			<h1>Poller</h1>
+			<h1 class="main-logo">Poller</h1>
 		</a>
-		<section>
-			<div>
-				{% if latest_question_list %}
-					<div>
-						<ul>
-						{% for question in latest_question_list %}
-							<article>
-								<div>
-									<li><h4><a href="{% url 'poller:detail' question.id %}">
-										{{ question.question_text }}
-									</a></h4></li>
-								</div>
-							</article>
-						{% endfor %}
-						</ul>
-					</div>
-				{% else %}
-					<p>No polls are available.</p>
-				{% endif %}
-			</div>
-		</section>
+		<div class="question-list">
+			<section>
+				<div>
+					{% if latest_question_list %}
+						<div>
+							<ul>
+							{% for question in latest_question_list %}
+								<article>
+									<div>
+										<li><h4><a href="{% url 'poller:detail' question.id %}">
+											{{ question.question_text }}
+										</a></h4></li>
+									</div>
+								</article>
+							{% endfor %}
+							</ul>
+						</div>
+					{% else %}
+						<p>No polls are available.</p>
+					{% endif %}
+				</div>
+			</section>
+		</div>
 	</main>
 </body>
 </html>

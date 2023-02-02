@@ -11,17 +11,17 @@
 <body>
 	<main>
 		<a href="{% url 'poller:index' %}">
-			<h1>Poller</h1>
+			<h1 class="main-logo">Poller</h1>
 		</a>
 		<section>
-			<div>
+			<div class="option-list">
 				<article>
 					<form action="{% url 'poller:vote' question.id %}" method="POST">
 						{% csrf_token %}
 						<fieldset>
 							<legend><h4>{{ question.question_text }}</h4></legend>
 							{% if error_message %}
-								<p><strong>{{ error_message }}</strong></p>
+								<p class="unselected-vote"><strong>{{ error_message }}</strong></p>
 							{% endif %}
 							{% for choice in question.choice_set.all %}
 								<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
@@ -31,7 +31,7 @@
 								<br>
 							{% endfor %}
 						</fieldset>
-						<input type="submit" value="Vote" style="margin-top: 20px;">
+						<input type="submit" value="Vote" class="vote-button">
 					</form>
 				</article>
 			</div>
